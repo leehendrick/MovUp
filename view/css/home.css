@@ -1,0 +1,189 @@
+body, ul {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+  
+}
+a:hover{
+    background: rgba(0, 0, 0, .05);
+}
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#logo-img{
+    width: 130px;
+}
+#header{
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e7e7e7;
+}
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    text-align: center;
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile{
+    display: none;
+}
+#driver{
+    background-image: linear-gradient(125deg, #a72879, #064497);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#footer{
+    padding: 1rem;
+    align-items: center;
+    background: #e7e7e7;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+#select{
+    background-image: linear-gradient(125deg, #a72879, #064497);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 4px 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.input-text {
+    text-align: center;
+    background-image: linear-gradient(125deg, #a72879, #064497);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 45%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+}
+#mapa{
+    width: 100%;
+    height: 612px;
+    display: flex;
+}
+#map{
+    height: 612px; 
+    width: 100%; 
+    flex: auto;
+}
+#sidebar {
+    flex-basis: 15rem;
+    flex-grow: 1;
+    padding: 1rem;
+    max-width: 30rem;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+#sidebar{
+    flex: 0 1 auto;
+    padding: 0;
+  }
+  #sidebar > div {
+    padding: 0.5rem;
+  }
+@media(max-width: 600px){
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7;
+        height: 0px;
+        transition: ease-in-out .5s ;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburguer{
+        border-top: 2px solid;
+        width: 20px;
+        display: block;
+    }
+    #hamburguer::after, #hamburguer::before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+    nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    #driver{
+        margin-top: 15px;
+    }
+    #footer{
+        width: 100%;
+    }
+    #mapa{
+        width: 100%;
+        height: 82vh;
+    }
+    #map{
+        height: 82vh; 
+        width: 100%; 
+    }
+}

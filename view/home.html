@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/view/css/home.css">
+    <script src="/view/js/home.js" defer></script>
+    <script src="/view/js/script.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default" defer></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKIzh7T1VM_wdXMfMDTsz7xT42W4x0UEM&callback=initMap&v=weekly"
+    defer
+  ></script>
+    <title>Home</title>
+</head>
+<body>
+    <header id="header">
+        <img id="logo-img" src="/view/img/logo.png" alt="">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+        <ul id="menu" role="menu">
+            <li><a href="/view/profile.html">PERFIL</a></li>
+            <li><a href="#">RIDE HISTORY</a></li>
+            <li><a href="#">VOUCHERS</a></li>
+            <li><a href="#">MESSAGES</a></li>
+            <li><a href="#">REFERRAL</a></li>
+            <li><a href="#">HELP</a></li>
+            <button id="driver">Become a driver</button>
+        </ul>
+    </nav>      
+    </header>
+    <main id="mapa">
+        <div id="map"></div>
+        <div id="sidebar"></div>     
+        <!-- prettier-ignore -->
+   </main>
+            <div id="footer">
+              </div>
+</body>
+</html>
