@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous" defer></script>
+      <link rel="stylesheet" href="../public/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>Perfil</title>
+</head>
+<body class="vh-100 overflow-hidden">
+
+    <!--NavBar-->
+    <nav class=" nav navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#">MovUp</a>
+
+    <!--Toogle Btn-->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    <!--Toogle Btn-->
+
+    <!--Sidebar-->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+     <!--Sidebar Body-->       
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="/view/index.html">HOME</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="/view/profile.html">PROFILE</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">VOUCHERS</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">MESSAGES</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">REFERRAL</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link" href="#">HELP</a>
+                  </li>
+              </ul>
+                <button class="btn btn-outline-success" type="submit">BECOME A DRIVER</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!--NavBar-->
+    <div class="container mt-4">
+        <div class="jumbotron cards">
+            <div class="card-body">
+              <h5 class="card-title">PROFILE</h5>
+              <form class="form">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email">
+                  <div id="email" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="number" class="form-label">Telefone</label>
+                    <input type="number" class="form-control" id="number">
+                  </div>
+                <button type="submit" class="btn btns btn-primary">Save Changes</button>
+              </form>
+            </div>
+          </div>
+    </div>
+
+</body>
+</html>
